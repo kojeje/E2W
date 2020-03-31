@@ -1,0 +1,170 @@
+
+*** These modified files were found in JOE when it aborted on Tue Mar 31 12:40:49 2020
+*** JOE was aborted because the terminal closed
+
+*** Fichier '/root/.gitconfig'
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+^[[A^[[A^C
+root@server1:/var/www/clients/client1/web1/web# git commit -m "Theme wordpress installé... Animation js à voir"
+Sur la branche master
+rien à valider, la copie de travail est propre
+root@server1:/var/www/clients/client1/web1/web# git log
+commit 6c3d70cf631e19a5d71929824f3e0e3111cd88bd (HEAD -> master)
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 11:32:58 2020 +0200
+
+    Theme wordpress installé... Animation js à voir
+root@server1:/var/www/clients/client1/web1/web# git commit -m "Theme wordpress installé... Animation js à voir"git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"^C
+root@server1:/var/www/clients/client1/web1/web# git checkout SHADuCommit
+error: le spécificateur de chemin 'SHADuCommit' ne correspond à aucun fichier connu de git
+root@server1:/var/www/clients/client1/web1/web# git branch dev
+root@server1:/var/www/clients/client1/web1/web# git checkout dev
+Basculement sur la branche 'dev'
+root@server1:/var/www/clients/client1/web1/web# git commit -m -a "branche dev"
+error: le spécificateur de chemin 'branche dev' ne correspond à aucun fichier connu de git
+root@server1:/var/www/clients/client1/web1/web# git commit -a -m "branche dev"
+Sur la branche dev
+rien à valider, la copie de travail est propre
+root@server1:/var/www/clients/client1/web1/web# git checkout master
+Basculement sur la branche 'master'
+root@server1:/var/www/clients/client1/web1/web# git checkout dev
+Basculement sur la branche 'dev'
+root@server1:/var/www/clients/client1/web1/web# ls
+android-icon-192x192.png  apple-icon-152x152.png  apple-icon-72x72.png	favicon-16x16.png    favicon.ico  manifest.json        ms-icon-70x70.png  stats		      wp-comments-post.php  wp-cron.php        wp-login.php	wp-trackback.php
+apple-icon-114x114.png	  apple-icon-180x180.png  apple-icon-76x76.png	favicon-256x256.png  index.htmx   ms-icon-144x144.png  readme.html	  wp-activate.php     wp-config.php	    wp-includes        wp-mail.php	xmlrpc.php
+apple-icon-120x120.png	  apple-icon-57x57.png	  browserconfig.xml	favicon-32x32.png    index.php	  ms-icon-150x150.png  README.md	  wp-admin	      wp-config-sample.php  wp-links-opml.php  wp-settings.php
+apple-icon-144x144.png	  apple-icon-60x60.png	  error			favicon-96x96.png    license.txt  ms-icon-310x310.png  robots.txt	  wp-blog-header.php  wp-content	    wp-load.php        wp-signup.php
+root@server1:/var/www/clients/client1/web1/web# nano dev.txt
+root@server1:/var/www/clients/client1/web1/web# git add .
+root@server1:/var/www/clients/client1/web1/web# git commit -a dev.txt -m "essai commande -a"
+fatal: Spécifier des chemins avec l'option -a n'a pas de sens.
+root@server1:/var/www/clients/client1/web1/web# git commit -a -m "essai commande -a"
+[dev 9bc52d2b] essai commande -a
+ Committer: root <root@server1.entre2web.com>
+Votre nom et votre adresse courriel ont été configurés automatiquement en se
+fondant sur votre nom d'utilisateur et le nom de votre machine. Veuillez
+vérifier qu'ils sont corrects. Vous pouvez supprimer ce message en les
+paramétrant explicitement. Lancez les commandes suivantes et suivez les
+instruction dans votre éditeur pour éditer votre fichier de configuration :
+
+    git config --global --edit
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 dev.txt
+root@server1:/var/www/clients/client1/web1/web# git log
+commit 9bc52d2b8ff10d70cade1ce47c461918a294257e (HEAD -> dev)
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 12:05:29 2020 +0200
+
+    essai commande -a
+
+commit 6c3d70cf631e19a5d71929824f3e0e3111cd88bd (master)
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 11:32:58 2020 +0200
+
+    Theme wordpress installé... Animation js à voir
+root@server1:/var/www/clients/client1/web1/web# git revert 9bc52d2b8ff10d70cade1ce47c461918a294257e
+suggestion : en attente de la fermeture du fichier par votre éditeur de texte…
+    I    /var/www/clients/client1/web1/web/.git/COMMIT_EDITMSG (Modifié)(git-commit)                                                                                                                                                                         Row 12   Col 30
+Revert "essai commande -a"
+
+This reverts commit 9bc52d2b8ff10d70cade1ce47c461918a294257e.
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+ Validateur : root <root@server1.entre2web.com>
+#
+ Sur la branche dev
+# Modifications qui seront validées :
+        supprimé :        dev.txt
+#
+
+
+
+
+
+
+
+
+
+
+Abandonner les changements dans ce fichier (o,n,^C) ?
+Fichier /var/www/clients/client1/web1/web/.git/COMMIT_EDITMSG non enregistré
+[dev c4154b50] Revert "essai commande -a"
+ Committer: root <root@server1.entre2web.com>
+Votre nom et votre adresse courriel ont été configurés automatiquement en se
+fondant sur votre nom d'utilisateur et le nom de votre machine. Veuillez
+vérifier qu'ils sont corrects. Vous pouvez supprimer ce message en les
+paramétrant explicitement. Lancez les commandes suivantes et suivez les
+instruction dans votre éditeur pour éditer votre fichier de configuration :
+
+    git config --global --edit
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 deletions(-)
+ delete mode 100644 dev.txt
+root@server1:/var/www/clients/client1/web1/web# update-alternatives --config editor
+Il existe 9 choix pour l'alternative editor (qui fournit /usr/bin/editor).
+
+  Sélection   Chemin              Priorité  État
+------------------------------------------------------------
+* 0            /usr/bin/joe         70        mode automatique
+  1            /bin/nano            40        mode manuel
+  2            /usr/bin/jmacs       50        mode manuel
+  3            /usr/bin/joe         70        mode manuel
+  4            /usr/bin/jpico       50        mode manuel
+  5            /usr/bin/jstar       50        mode manuel
+  6            /usr/bin/rjoe        25        mode manuel
+  7            /usr/bin/vim.basic   30        mode manuel
+  8            /usr/bin/vim.nox     40        mode manuel
+  9            /usr/bin/vim.tiny    15        mode manuel
+
+Appuyez sur <Entrée> pour conserver la valeur par défaut[*] ou choisissez le numéro sélectionné :2
+update-alternatives: utilisation de « /usr/bin/jmacs » pour fournir « /usr/bin/editor » (editor) en mode manuel
+root@server1:/var/www/clients/client1/web1/web# git revert 9bc52d2b8ff10d70cade1ce47c461918a294257e
+Sur la branche dev
+rien à valider, la copie de travail est propre
+root@server1:/var/www/clients/client1/web1/web# git log
+commit c4154b5090c8a9c1a96d9f7997d460412e0cc9f8 (HEAD -> dev)
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 12:07:02 2020 +0200
+
+    Revert "essai commande -a"
+
+    This reverts commit 9bc52d2b8ff10d70cade1ce47c461918a294257e.
+
+commit 9bc52d2b8ff10d70cade1ce47c461918a294257e
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 12:05:29 2020 +0200
+
+    essai commande -a
+
+commit 6c3d70cf631e19a5d71929824f3e0e3111cd88bd (master)
+Author: root <root@server1.entre2web.com>
+Date:   Tue Mar 31 11:32:58 2020 +0200     Theme wordpress installé... Animation js à voir
+root@server1:/var/www/clients/client1/web1/web# update-alternatives --config editor
+# Ceci est le fichier de configuration personnel de Git.
+[user]
+# Veuillez adapter et décommenter les lignes suivantes :
+#	name = root
+#	email = root@server1.entre2web.com
+
+*** Fichier '(Sans nom)'
+/var/www/clients/client1/web1/web/.git/COMMIT_EDITMSG
+/root/.gitconfig
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
